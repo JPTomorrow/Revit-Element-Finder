@@ -83,7 +83,7 @@ namespace JPMorrow.RevitElementSearch {
                 string val_str = p.AsValueString();
                 string[] add = null;
 
-                bool t(params ParameterType[] x) => x.Any(y => y == p.Definition.ParameterType) ;
+                bool t(params ParameterType[] x) => x.Any(y => y == p.Definition.ParameterType);
 
                 if(t(ParameterType.Text) && !string.IsNullOrWhiteSpace(str)) 
                     add = new[] { p.Definition.Name, p.AsString() };

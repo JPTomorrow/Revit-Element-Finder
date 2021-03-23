@@ -52,6 +52,7 @@ namespace JPMorrow.UI.ViewModels
 
                 var query = selected.First().Value;
                 var views = ViewFinder.GetViewsThatContainElement(Info, query.CollectedElement);
+                
                 var pp = ElementSearch.GetParametersForQuery(Info, query);
                 var parameter_strs = ElementSearch.GetParameterNamesAndValues(pp);
 
